@@ -46,4 +46,26 @@
                $(".m-nav").slideToggle();
            });
        });
+       
+
+       $(function() {
+                    $(".w-box").mouseover(function() {
+                        $(this).find(".l-box").css("opacity", "0.5");
+                        $(this).find(".c-box").css("opacity", "1").stop().animate({
+                            left: '68px'
+                        });
+                        $(this).find(".s-box").css("opacity", "1").stop().animate({
+                            right: '95px'
+                        });
+                    });
+                    $(".w-box").mouseleave(function() {
+                        $(this).find(".l-box").css("opacity", "0");
+                        $(this).find(".c-box").stop().animate({
+                            left: '-23px'
+                        }).css("opacity", "0");
+                        $(this).find(".s-box").stop().animate({
+                            right: '-10px'
+                        }).css("opacity", "0");
+                    });
+                });
    })
