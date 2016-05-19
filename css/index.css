@@ -48,11 +48,22 @@
     margin-right: 20px;
 }
 
+.to-top {
+    position: fixed;
+    right: 80px;
+    bottom: 5px;
+}
+.to-top a img {
+    width: 40px;
+    padding: 10px;
+    background: #fff;
+    opacity: .6;
+    border-radius: 6px;
+}
 
 /* ---------------------------------------------------------------------------- 
 /* -----------------------------------导航栏------------------------------- 
 /* ---------------------------------------------------------------------------- */
-
 
 @media only screen and (min-width: 100px) and (max-width: 800px) {
     #fixedMenu {
@@ -235,7 +246,7 @@
 
 
 /*boxboxboxbox*/
- 
+
 .w-box {
     width: 226px;
     height: 226px;
@@ -284,37 +295,7 @@
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
- 
 
-
-/*@media only screen and (min-width:360px) {
-    .succ-fec {
-        width: 22%;
-        height: 45px;
-        position: absolute;
-        left: 41%;
-        top: 40%;
-        background: #fff;
-        text-align: center;
-        line-height: 45px;
-        color: #009CE5;
-        border: 1px solid #D5D5D5;
-        opacity: 0;
-    }
-    .succ-fec:hover {
-        background: #23527C;
-        color: #fff;
-        cursor: pointer;
-    }
-    .s-tubiao {
-        font-size: 14px;
-        margin-right: 5px;
-        line-height: 45px;
-        position: relative;
-        top: 3px
-    }
-}
-*/
 .more {
     text-align: center;
 }
@@ -351,124 +332,88 @@
 .four4 {
     background: url(../img/index_92.png) no-repeat;
 }
-/* 
-.four:hover {
-    background-position: 0px -218px;
-}
-
-@media only screen and (min-width:1000px) {
-    .f-nav {
-        display: block;
-        height: 50px;
-        background: #0096db;
-        line-height: 50px;
-        text-align: center;
-    }
-    .f-nav li {
-        display: inline-block;
-        padding-right: 30px;
-    }
-    .f-nav a {
-        color: #a5d0e2;
-    }
-    .f-nav a:hover {
-        text-decoration: none;
-    }
-}
-
-
-@media only screen and (min-width: 100px) and (max-width:1000px) {
-    .f-nav {
-        display: none;
-    }
-}
-
- */
 
 
 /* ---------------------------------------------------------------------------- 
 /* ------------------------------------客服------------------------------- 
 /* ---------------------------------------------------------------------------- */
 
-    .fixed_kefu {
-        position: fixed;
-        bottom: 50px;
-        right: 3px;
-        width: 120px;
-        background: #fff;
-        border: 1px solid #D5D5D5;
-        border-radius: 15px;
-        font-family: "微软雅黑";
-        z-index: 9999;
-    }
-    
-    .fixed_kefu_1 {
-        width: 100%;
-        height: 70px;
-        background: #00b7ee;
-        line-height: 70px;
-        text-align: center;
-        color: #fff;
-        font-size: 16px;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-    }
-    
-    .fixed_kefu_2 {
-        position: relative;
-        padding-top: 10px;
-        text-align: center;
-        font-size: 13px;
-        color: #666;
-        line-height: 0.8;
-    }
-    
-    p {
-        margin: 0;
-        padding: 0;
-    }
-    
-    .close_kefu {
-        position: absolute;
-        top: -10px;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        cursor: pointer;
-    }
-    
-    .nf_line {
-        padding: 0 10px;
-        margin-top: 15px;
-    }
-    
-    .nf_line_2 {
-        border-bottom: 1px solid #D5D5D5;
-    }
-    
-    .nf_foot_p {
-        position: absolute;
-        left: 10px;
-        top: 15px;
-        color: #00b7ee;
-        font-size: 14px;
-    }
-    
-    @media only screen and (min-width: 100px) and (max-width: 640px) {
-        .fixed_kefu {
-            display: none
-        }
-    }
+.fixed_kefu {
+    position: fixed;
+    bottom: 50px;
+    right: 3px;
+    width: 120px;
+    background: #fff;
+    border: 1px solid #D5D5D5;
+    border-radius: 15px;
+    font-family: "微软雅黑";
+    z-index: 9999;
+}
 
+.fixed_kefu_1 {
+    width: 100%;
+    height: 70px;
+    background: #00b7ee;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.fixed_kefu_2 {
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    line-height: 0.8;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.close_kefu {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nf_line {
+    padding: 0 10px;
+    margin-top: 15px;
+}
+
+.nf_line_2 {
+    border-bottom: 1px solid #D5D5D5;
+}
+
+.nf_foot_p {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #00b7ee;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 640px) {
+    .fixed_kefu {
+        display: none
+    }
+}
 
 
 /* ---------------------------------------------------------------------------- 
 /* ------------------------------------footer------------------------------- 
 /* ---------------------------------------------------------------------------- */
-
-
 
 footer {
     margin-top: 40px;
@@ -477,26 +422,21 @@ footer {
     background-color: #4a4a4a;
     text-align: center;
 }
-.Lfoot{
+
+.Lfoot {
     line-height: 75px;
 }
+
 .Lfoot img {
     height: 30px;
 }
 
-.Lfoot p{
+.Lfoot p {
     color: #AEAEAE;
     line-height: 1.8;
     font-size: 12px;
     font-family: "微软雅黑", "黑体", "新宋体", "Arial Unicode MS"
 }
-
-
-
-
-
-
-
 
 
 /*导航区Pc重写*/
@@ -538,7 +478,6 @@ footer {
     .default>a {
         color: #FA3E04;
     }
-
     .down-con {
         display: none;
         z-index: 1;
@@ -565,6 +504,7 @@ footer {
         display: none;
     }
     .logo {
+        margin-top: 20px;
         width: 160px;
     }
 }
@@ -646,9 +586,7 @@ footer {
 }
 
 
-
 /*more*/
-
 
 @media only screen and (min-width:640px) {
     .time {
@@ -679,3 +617,291 @@ footer {
 #section2 .flex-next {
     display: none;
 }
+
+
+/* ---------------------------------------------------------------------------- 
+/* ------------------------------------priductions------------------------------- 
+/* ---------------------------------------------------------------------------- */
+
+@media only screen and (min-width:1200px) {
+    .teshu3 {
+        padding: 160px 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .teshu3 {
+        padding: 90px 0;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width:768px) {
+    .teshu3 {
+        padding: 20PX 0;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .teshu2 {
+        padding: 140px 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .teshu2 {
+        padding: 90px 0;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width:768px) {
+    .teshu2 {
+        padding: 20PX 0;
+    }
+}
+
+.hua-img {
+    width: 100%;
+}
+
+.hover0 {
+    width: 273px;
+    height: 100px;
+    background: url(../image/ydzdxt/65465.png);
+    margin: 0 auto;
+}
+
+.hover1 {
+    width: 273px;
+    height: 100px;
+    background: url(../image/sjtjfx/hover2.png);
+    margin: 0 auto;
+}
+
+.hover2 {
+    width: 273px;
+    height: 100px;
+    background: url(../image/wcxxgl/65465.png);
+    margin: 0 auto;
+}
+
+.hover:hover {
+    background-position: 0px -100px;
+}
+
+
+/**/
+
+.cirle {
+    color: #62cfcf;
+}
+
+@media only screen and (min-width:1500px) {
+    .teshu {
+        width: 300px;
+        margin: 0 auto;
+        padding: 110px 0px;
+        line-height: 2;
+        position: relative;
+        left: 120px;
+    }
+}
+
+@media only screen and (min-width:767px) and (max-width:1500px) {
+    .teshu {
+        width: 300px;
+        margin: 0 auto;
+        padding: 110px 0px;
+        line-height: 2;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width:767px) {
+    .teshu {
+        width: 300px;
+        margin: 0 auto;
+        padding: 30px 0px;
+        line-height: 2;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1200px) {
+    .img-xs {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 640px) {
+    .baohe7 {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .baohe4 {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width:640px) {
+    .baohe7 {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:700px) {
+    .title {
+        width: 90%;
+    }
+}
+ .dance {
+            margin: 0 auto;
+            line-height: 2;
+        }
+        
+        @media only screen and (min-width:100px) and (max-width:767px) {
+            .dance {
+                width: 75%;
+            }
+        }
+        
+        @media only screen and (min-width:767px) and (max-width:992px) {
+            .dance {
+                padding: 60px 0;
+                width: 80%;
+            }
+        }
+        
+        @media only screen and (min-width: 992px) and (max-width:1200px) {
+            .dance {
+                padding: 100px 0;
+                width: 80%;
+            }
+        }
+        
+        @media only screen and (min-width:1200px) and (max-width:1600px) {
+            .dance {
+                padding: 130px 0;
+                width: 70%;
+            }
+        }
+        
+        @media only screen and (min-width:1600px) {
+            .dance {
+                padding: 140px 0;
+                width: 70%;
+            }
+        }
+        
+        
+        @media only screen and (min-width:768px) {
+            .tiao {
+                padding: 50px 30px;
+            }
+            .tishi {
+                padding: 150px 30px;
+                color: #666;
+            }
+            .tishi2 {
+                padding: 150px 0;
+            }
+            .teshu3 {
+                padding: 100px 0;
+            }
+        }
+        
+        @media only screen and (min-width: 100px) and (max-width: 768px) {
+            .tishi {
+                padding: 30px 30px;
+                color: #666;
+            }
+            .tishi2 {
+                padding: 20px 0;
+            }
+        }
+
+
+        /*信息采集设备*/
+        @media only screen and (min-width: 100px) and (max-width:768px) {
+            .julik3 {
+                padding: 30px 0px;
+                text-align: center;
+            }
+            .julikt {
+                padding: 20px 0px;
+                text-align: center;
+            }
+            .julik5 {
+                padding: 50px 0px;
+                text-align: center;
+            }
+            .julik6 {
+                padding: 50px 0px;
+                text-align: center;
+            }
+        }
+        
+        @media only screen and (min-width:768px) {
+            .julik3 {
+                padding: 50px 0px;
+                text-align: center;
+            }
+            .julikt {
+                padding: 50px 0px;
+                text-align: center;
+            }
+            .julik5 {
+                padding: 100px 30px;
+                text-align: center;
+            }
+            .julik6 {
+                padding: 180px 30px;
+                text-align: center;
+            }
+        }
+        
+        @media only screen and (min-width:800px) {
+            .img-btn {
+                position: absolute;
+                right: 30%;
+                top: 70%;
+                width: 12%;
+            }
+        }
+        
+        @media only screen and (min-width: 100px) and (max-width: 800px) {
+            .img-btn {
+                position: absolute;
+                right: 30%;
+                top: 65%;
+            }
+        }
+        
+        
+        @media only screen and (min-width:1500px) {
+            .teshu {
+                width: 300px;
+                margin: 0 auto;
+                padding: 110px 0px;
+                line-height: 2;
+                position: relative;
+                left: 120px;
+            }
+        }
+        
+        @media only screen and (min-width:767px) and (max-width:1500px) {
+            .teshu {
+                width: 300px;
+                margin: 0 auto;
+                padding: 110px 0px;
+                line-height: 2;
+            }
+        }
+        
+        @media only screen and (min-width: 100px) and (max-width:767px) {
+            .teshu {
+                width: 300px;
+                margin: 0 auto;
+                padding: 30px 0px;
+                line-height: 2;
+            }
+        }
