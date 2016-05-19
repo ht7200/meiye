@@ -535,9 +535,10 @@ footer {
         color: #FA3E04;
         text-decoration: none;
     }
-    .defalut>a {
+    .default>a {
         color: #FA3E04;
     }
+
     .down-con {
         display: none;
         z-index: 1;
