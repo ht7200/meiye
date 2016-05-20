@@ -67,12 +67,15 @@
        });
 
 
-
+       var  rotate = 0;
        $(".close_kefu img").click(function() {
-           $(".fixed_kefu").animate({
-               bottom: '-500px'
-           }, 'slow');
+        rotate += 180;
+        $(this).css({'transform': 'rotate(' + rotate+ 'deg)'});
+           $(".fixed_kefu_2").slideToggle();
        });
+
+
+
        /******************回到顶部*************************/
 
     $('.to-top').click(function() {
