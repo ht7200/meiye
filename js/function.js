@@ -67,36 +67,27 @@
        });
 
 
-       var  rotate = 0;
+       var rotate = 0;
        $(".close_kefu img").click(function() {
-        rotate += 180;
-        $(this).css({'transform': 'rotate(' + rotate+ 'deg)'});
+           rotate += 180;
+           $(this).css({ 'transform': 'rotate(' + rotate + 'deg)' });
            $(".fixed_kefu_2").slideToggle();
        });
 
-
-
        /******************回到顶部*************************/
 
-    $('.to-top').click(function() {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 1000);
-        return false;
-    });
+       //scroll to top
+       $('.to-top').hide();
+       $(window).scroll(function() {
+           if ($(this).scrollTop() > 120) {
+               $('.to-top').fadeIn();
+           } else {
+               $('.to-top').fadeOut();
+           }
+       });
 
-
-    //scroll to top
-    $('.to-top').hide();  
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 120) {
-            $('.to-top').fadeIn();
-        } else {
-            $('.to-top').fadeOut();
-        }
-    });
-    $('.to-top').click(function() {
-        $("html, body").animate({ scrollTop: 0 }, 1000);
-        return false;
-    });
+       $('.to-top').click(function() {
+           $("html, body").animate({ scrollTop: 0 }, 500);
+           return false;
+       });
    });

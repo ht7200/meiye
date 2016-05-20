@@ -319,10 +319,12 @@
     width: 245px;
     height: 218px;
     margin: 20px auto;
+    background-size: 100% 100%;
 }
 
 .four2 {
     background: url(../img/index_88.png) no-repeat;
+
 }
 
 .four3 {
@@ -342,10 +344,10 @@
     position: fixed;
     bottom: 50px;
     right: 3px;
-    width: 119px;
+    width: 120px;
     background: #fff;
-    border: 1px solid #D5D5D5;
-    border-radius: 15px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     font-family: "微软雅黑";
     z-index: 9999;
 }
@@ -363,12 +365,15 @@
 }
 
 .fixed_kefu_2 {
+    width: 118px;
     position: relative;
     padding-top: 10px;
     text-align: center;
     font-size: 13px;
     color: #666;
     line-height: 0.8;
+    border-left: 1px solid #D5D5D5;
+    border-right:  1px solid #D5D5D5;
 }
 
 p {
